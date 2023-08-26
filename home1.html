@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>www.IB MREC.com</title>
+	
+<style>
+.textarea-container {
+  position: relative;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.textarea-container textarea {
+  width: 50%;
+  height: 120%;
+  box-sizing: border-box;
+margin-bottom: 10px;
+}
+.textarea-container button {
+  display: block;
+}
+.center {
+  text-align: center;
+  color: #006400;
+}		
+</style>
+
+	<style>
+		* {
+			margin: 0; 
+			padding: 0;
+		}
+
+		.navbar {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: sticky;
+			top: 0;
+			cursor: pointer;
+		}
+
+		.background {
+			background:#006400;
+			background-blend-mode: darken;
+			background-size: cover;
+		}
+
+		.nav-list {
+			width: 70%;
+			display: flex;
+			align-items: center;
+		}
+
+                                    .logo img {
+			width: 100px;
+			border-radius: 60px;
+		}
+
+
+		.nav-list li {
+			list-style: none;
+			padding: 26px 30px;
+		}
+                                       .nav-list li a {
+			text-decoration: none;
+			color: white;
+		}
+                                      .nav-list li a:hover {
+			color: grey;
+		}
+		#search {
+			padding: 5px;
+			font-size: 17px;
+			border: 2px solid grey;
+			border-radius: 9px;
+		}
+
+		.btn {
+			padding: 8px 20px;
+			margin: 7px 0;
+			border: 2px solid white;
+			border-radius: 8px;
+			background: none;
+			color: white;
+			cursor: pointer;
+		}
+
+		.btn-sm {
+			padding: 6px 10px;
+			vertical-align: middle;
+		}
+		.center {
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body>
+<h1 class="center">INTERACTION BOX</h1>
+	<nav class="navbar background">
+		<ul class="nav-list">
+			<div class="logo">
+				<img src= "https://i.pinimg.com/564x/a0/63/37/a063371e35bf9b0af065a8ca1eef8bd5.jpg" width="0px" height="80px">
+			</div>
+			<li><a href="#web">Home</a></li>
+			<li><a href="#web">FAQs</a></li>
+			<li><a href="#web">Notifications</a></li>
+<div>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.dropbtn {
+  background-color: #006400;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+</style>
+</head>
+<body>
+<div class="dropdown">
+  <button class="dropbtn">Profile</button>
+  <div class="dropdown-content">
+    <a href="#">Name</a>
+    <a href="#">Roll number</a>
+    <a href="#">Email</a>
+    <a href="#">My answers</a>
+  </div>
+</div>
+
+</body>
+
+</div>
+		</ul>
+
+		<div class="rightNav">
+			<input type="text" name="search" id="search">
+			<button class="btn btn-sm">Search</button>
+		</div>
+	</nav>
+<div style=" padding-top:10px;background-color:#F5F5F5">
+<form id="form" role="search" style="text-align:center">
+<textarea  rows="2" cols="50" placeholder="Ask your question"></textarea>
+  <input type="submit" value="Submit">
+</form>
+</div>
+<div style="text-align:center">
+<h1 style="padding-top:10px;padding-left:10px;text-align:center">Recently asked questions</h1>
+<div class="textarea-container " style="padding-left:10px;padding-top:50px">
+  <textarea name="foo">What are the companies visiting our campus?</textarea>
+<button onclick="myFunction()" >Answer</button>  
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Many great companies are visting our campus like infosys,accenture,capgemini,opentext,techmahindra,hp and many more..";
+}
+</script>
+</div>
+<div class="textarea-container" style="padding-left:10px;padding-top:30px">
+  <textarea name="foo1">Are there any cultural fests in our  campus?</textarea>
+<button onclick="myFunction1()">Answer</button>  
+<p id="demo1"></p>
+
+<script>
+function myFunction1() {
+  document.getElementById("demo1").innerHTML = "Yes ofcourse,we have many fests like AKSHARA,NAAC fests,alumni and we also celebrate every Indian  festival.";
+}
+</script>
+</div>
+<div class="textarea-container" style="padding-left:10px;padding-top:30px">
+  <textarea name="foo2">Are the seniors bossy?</textarea>
+<button onclick="myFunction2()">Answer</button>  
+<p id="demo2"></p>
+
+<script>
+function myFunction2() {
+  document.getElementById("demo2").innerHTML = " Absolutely not,they will be friendly with you until and unless you are rude .If they go beyond the limits we also have anti-ragging squad .";
+}
+</script>
+</div>
+<div class="textarea-container "style="padding-left:10px;padding-top:30px">
+  <textarea name="foo3">If I am interested in extra curricular activities like sports,music etc.Do we have any scope to go to  state or national level ?</textarea>
+<button onclick="myFunction3()">Answer</button>  
+<p id="demo3"></p>
+
+<script>
+function myFunction3() {
+  document.getElementById("demo3").innerHTML = "  We do have SAC which includes sports,music,social and technical clubs.You can reach out according to your talent.";
+}
+</script>
+</div>
+<p>------------------------------------------------------------------------------------------------------------------------------</p>
+<button onclick="myFunction4()">Answer</button>  
+<p id="demo4"></p>
+
+<script>
+function myFunction4() {
+  document.getElementById("demo4").innerHTML = "LOL we do have SAC like clubs but they never follows the schedule. .";
+}
+</script>
+</div>
+</div>
+</body>
+
+</html>
